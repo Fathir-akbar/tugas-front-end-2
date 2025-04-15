@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Card with Toast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="card">
+    <div class="tab">
+      <button onclick="selectPlan('basic')" id="tab-basic">Basic</button>
+      <button onclick="selectPlan('standard')" id="tab-standard" class="active">Standard</button>
+      <button onclick="selectPlan('premium')" id="tab-premium">Premium</button>
+    </div>
+
+    <div id="card-content">
+      <h4>Standard</h4>
+      <h2>Icon Sets</h2>
+      <p class="price">$120</p>
+      <p>Up to 100 creative & professional icons + two color versions/themes per month</p>
+      <ul>
+        <li>Included source files</li>
+        <li>Converted to responsive components</li>
+      </ul>
+      <button class="btn" onclick="showToast()">Add to cart</button>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">✅ Item added to cart!</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
